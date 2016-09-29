@@ -64,6 +64,7 @@ public class MusicEventAdapter extends ArrayAdapter<MusicEvent> {
 
         AssetManager am = mContext.getAssets();
         try {
+            String imageName = musicEvent.getImageName();
             InputStream stream = am.open(musicEvent.getImageName());
             Drawable event = Drawable.createFromStream(stream, musicEvent.getTitle());
             listItemImageView.setImageDrawable(event);

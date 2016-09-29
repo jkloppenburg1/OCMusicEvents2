@@ -50,6 +50,7 @@ public class EventListActivity extends ListActivity {
         //String title = MusicEvent.titles[pos];
         Intent detailsIntent = new Intent(this, EventDetailsActivity.class);
         MusicEvent clickedEvent = allMusicEvents.get(pos);
+
         String title = clickedEvent.getTitle();
         String date = clickedEvent.getDate();
         String day = clickedEvent.getDay();
